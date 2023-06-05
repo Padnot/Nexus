@@ -13,7 +13,28 @@ local nexus = require(game.ReplicatedStorage:WaitForChild("Nexus")) --Assuming i
 
 local server,client = nexus.LoadProxy("MyProxy")
 --Server is the server-instance of what is equivalent of a module
+function server:SayHi()
+  print("Hi!")
+end
+
+function client:SayHelloInServer(plr)
+  print(plr.Name,"Fired hello!")
+end
+
+--Script B
+--Assuming nexus has been required.
+local server = nexus.GetProxy("MyProxy") --Same name as registered in loadproxy
+server:SayHi() --Prints Hi on script a
 ```
+
+Client Code:
+```lua
+--Assuming nexus has been required
+local client = nexus.GetProxy("MyProxy")
+client:SayHelloInServer() --prints client name, Fired Hello in script a.
+```
+
+This simplifies process of requiring modules and the process of client-server communication, although for specific security reasons, a client can-not replicate a proxy to the server.
 
 # Background
 When creating this framework, I had a few cores on why i designed it this way. I will break down and simplify each cores best I can.
