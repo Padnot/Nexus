@@ -36,8 +36,10 @@ client:SayHelloInServer() --prints client name, Fired Hello in script a.
 
 This simplifies process of requiring modules and the process of client-server communication, although for specific security reasons, a client can-not replicate a proxy to the server.
 
+There are other features such as nodes and hosts
+
 # Background
 When creating this framework, I had a few cores on why i designed it this way. I will break down and simplify each cores best I can.
 
 -Readability.
-The main modules and everything related to this code was formatted and designed to be a little nicer to read, not bombarded with tons of comments explaining the usage. This is also the primary reason I made this framework. When reading other open-sourced frameworks such as that Knit, I was a little bit confused on how the system overall works, I know there's a documentation about how every function works, I just really want to see the background processes and try to learn from that point
+The main modules and everything related to this code was formatted and designed to be a little nicer to read, not bombarded with tons of comments explaining the usage. This is also the primary reason I made this framework. When reading other open-sourced frameworks such as that Knit, I was a little bit confused on how the system overall works, I know there's a documentation about how every function works, I just really want to see the background processes and try to learn from that point.
