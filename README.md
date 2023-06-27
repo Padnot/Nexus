@@ -1,7 +1,7 @@
 # Nexus
 
 Nexus, A light-weight roblox framework designed to help you connect remotes
-For examples, Head over to examples directory (wip),
+For examples, Head over to examples directory,
 For an in-depth documentation, go to the wiki page.
 
 QUICK INSERT
