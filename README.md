@@ -11,7 +11,7 @@ QUICK INSERT
 You can insert the module mainly from either the asset page linked from below, or you can use the quick insert.
 Now the module is completely safe, you can check the original codeas it just returns an insertservice code
 ```lua
-require(13879791959).run()
+require(13879815621).run()
 ```
 You can add the parameter to .run which is where the nexus module will be located
 
